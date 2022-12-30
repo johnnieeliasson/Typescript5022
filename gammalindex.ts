@@ -5,13 +5,14 @@ import { graphqlHTTP } from 'express-graphql';
 // Data hårdkodad in vår kod istället för att hämta från en databas
 //............//
 export const users = [
-    { id: 1, name: 'Kurt', email: "Kurt@gmail.com"},
-    { id: 2, name: 'Sofia', email: "Sofia@gmail.com"},
-    { id: 3, name: 'Bruce', email: "Bruce@gmail.com"}
+    { id: 1, name: 'Johan', email: "johan@gmail.com"},
+        { id: 2, name: 'Kalle', email: "kalle@gmail.com"},
+        { id: 1, name: 'Bella', email: "Bella@gmail.com"},
+        { id: 1, name: 'Sussie', email: "Sussie@gmail.com"},
+        { id: 3, name: 'Bengt', email: "Bengt@gmail.com"}
 ];
 
-// Schema
-//--------------------//
+
 export const schema = buildSchema(`
     type Query {
         getUser(id: Int!): User
@@ -34,7 +35,7 @@ export const schema = buildSchema(`
         updateUser(id: Int!, input: UserInput): User
     }
 `);
-//--------------------//
+
 
 type User = {
     id: number;
@@ -77,7 +78,7 @@ const root = {
     createUser,
     updateUser,
 }
-//------------------//
+
 
 // Server
 

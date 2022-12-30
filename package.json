@@ -1,5 +1,5 @@
 {
-  "name": "type-graphql",
+  "name": "typescript5022",
   "version": "1.0.0",
   "description": "",
   "main": "gammalindex.ts",
@@ -21,7 +21,15 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.20",
     "typescript": "^4.5.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnieeliasson/Typescript5022.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnnieeliasson/Typescript5022/issues"
+  },
+  "homepage": "https://github.com/johnnieeliasson/Typescript5022#readme"
 }
